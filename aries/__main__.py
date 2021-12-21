@@ -485,7 +485,7 @@ def aries_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="aboutmanu_tac")]]
+                [[InlineKeyboardButton(text="Back", callback_data="aboutmanu_back")]]
             ),
         )
 
@@ -574,7 +574,7 @@ def aries_about_callback(update, context):
                         ),
                     ],
                     [ 
-                      InlineKeyboardButton(text="Back 🔙", callback_data="aboutmanu_howto"),
+                      InlineKeyboardButton(text="Back 🔙", callback_data="aboutmanu_back"),
                     ],
                 ]
             ),
@@ -601,7 +601,7 @@ def aries_about_callback(update, context):
                         
                     ],
                    [
-                       InlineKeyboardButton(text="Back 🔙", callback_data="aboutmanu_howto"),
+                       InlineKeyboardButton(text="Back 🔙", callback_data="aboutmanu_back"),
                    ],
                 ]
             ),
