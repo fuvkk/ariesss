@@ -73,16 +73,13 @@ GROUP_START_IMG = (
 )
 
 PM_START_TEXT = """
-Hello there, [👋](https://telegra.ph/file/c20a6da05abc7a15297d1.jpg) I'm {}.
-Im Powerfull Management Bot And I Will Help In Managing Your Group.
-Maintained by : [Aryza](https://t.me/idzxartez)
-Founder And Dev Of : [IDZEROID SYNDICATES](https://t.me/idzeroidsupport).
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-• *Uptime:* `{}`
-• `{}` *Users, across* `{}` *chats.*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-Made specifically to manage your group , I specialize in managing Entertainment and all type groups and channels.
-✪ Make sure you read *DETAILS* Section Below ✪ 
+ʜᴇʏ ᴛʜᴇʀᴇ, ᴛʜɪꜱ ɪꜱ [ᴄʀᴇᴀᴛᴏʀ.](https://telegra.ph/file/c20a6da05abc7a15297d1.jpg)
+ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ɴᴇxᴛ ɢᴇɴᴇʀᴀᴛɪᴏɴ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ᴡʜɪᴄʜ ᴡɪʟʟ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ᴜʀ ꜱᴜᴘᴇʀ ɢʀᴏᴜᴘ ᴇᴀꜱɪʟʏ ᴀɴᴅ ʜᴇʟᴘꜱ ᴜ ᴛᴏ ᴘʀᴏᴛᴇᴄᴛɪɴɢ ʏᴏᴜʀ ɢʀᴏᴜᴘ ꜰʀᴏᴍ ꜱᴘᴀᴍᴍᴇʀꜱ ᴀɴᴅ ꜱᴄᴀᴍᴍᴇʀꜱ
+- - - - - - - - - - - - - - - - -. - - - - - -
+• *ᴡᴏʀᴋɪɴɢ ᴛɪᴍᴇ :* `{}`
+• `{}` *ᴜꜱᴇʀꜱ, ᴀᴄʀᴏꜱꜱ* `{}` *ᴄʜᴀᴛꜱ.*
+- - - - - - - - - - - - - - - - - - - - - - - 
+ᴋɴᴏᴡ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ ʙʏ ᴜꜱɪɴɢ ꜰᴏʟʟᴏᴡɪɴɢ ʙᴜᴛᴛᴏɴꜱ.
 """
 
 buttons = [
