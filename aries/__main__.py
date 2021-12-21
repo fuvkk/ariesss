@@ -67,9 +67,9 @@ from aries.modules.helper_funcs.readable_time import get_readable_time
 from aries.modules.sql import users_sql as sql
 
 HELP_MSG = "Click The Button Below To Get Help Menu In Your Private Message."
-HELP_IMG = "https://telegra.ph/file/ac893610cae84f302b2da.jpg"
+HELP_IMG = "https://telegra.ph/file/c20a6da05abc7a15297d1.jpg"
 GROUP_START_IMG = (
-    "CAACAgIAAx0CXBdkHQAC34lhpHKAV3nIlqfcnYmDkIhbOFTktwACFBAAAkXe2EuBs3crQ6mMdR4E"
+    "CAACAgIAAx0CS0SzcwACCFhhwj_C9beYkabtovWjzLisrebRxAACbwAD29t-AAGZW1Coe5OAdCME"
 )
 
 PM_START_TEXT = """
@@ -78,8 +78,8 @@ PM_START_TEXT = """
 - - - - - - - - - - - - - - - - -. - - - - - -
 ๏ ʙᴏᴛ  »  `{}`
 ๏ ᴛɪᴍᴇ »  `{}`
-๏ ᴜꜱᴇʀ »  `{}`
-๏ ᴄʜᴀᴛ »  `{}`
+๏ ᴜꜱᴇʀs »  `{}`
+๏ ᴄʜᴀᴛs »  `{}`
 - - - - - - - - - - - - - - - - - - - - - - - 
 *ᴋɴᴏᴡ ᴍᴏʀᴇ ʙʏ ᴜꜱɪɴɢ ꜰᴏʟʟᴏᴡɪɴɢ ʙᴜᴛᴛᴏɴꜱ.*
 """
@@ -325,7 +325,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "*ᴄʀᴇᴀᴛᴏʀ  {}  ʜᴇʟᴘ*\n".format(HELPABLE[module].__mod_name__)
+                "*Creator Pavan {} Module*\n".format(HELPABLE[module].__mod_name__)
                 + HELPABLE[module].__help__
             )
             query.message.edit_text(
@@ -399,7 +399,7 @@ def aries_about_callback(update, context):
             f"\n\n➲  ɪ ʜᴀᴠᴇ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴛɪ-ꜰʟᴏᴏᴅ ꜱʏꜱᴛᴇᴍ."
             f"\n\n➲  ɪ ʜᴀᴠᴇ ᴀ ɴᴏᴛᴇ ᴋᴇᴇᴘɪɴɢ ꜱʏꜱᴛᴇᴍ, ʙʟᴀᴄᴋʟɪꜱᴛꜱ, ᴀɴᴅ ᴇᴠᴇɴ ᴘʀᴇᴅᴇᴛᴇʀᴍɪɴᴇᴅ ʀᴇᴘʟɪᴇꜱ ᴏɴ ᴄᴇʀᴛᴀɪɴ ᴋᴇʏᴡᴏʀᴅꜱ."
             f"\n\n➲  ɪ ᴄʜᴇᴄᴋ ꜰᴏʀ ᴀᴅᴍɪɴꜱ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ʙᴇꜰᴏʀᴇ ᴇxᴇᴄᴜᴛɪɴɢ ᴀɴʏ ᴄᴏᴍᴍᴀɴᴅ ᴀɴᴅ ᴍᴏʀᴇ ꜱᴛᴜꜰꜰꜱ."
-            f"\n\n\n *ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇꜱᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ʙᴏᴛ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ ᴀᴛ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ᴀɴᴅ ᴛᴏ ᴋᴇᴇᴘ ʏᴏᴜʀꜱᴇʟꜰ ᴜᴘᴅᴀᴛᴇᴅ ᴀʙᴏᴜᴛ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ᴊᴏɪɴ [ᴛʜᴇ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ](https://t.me/TheCreatorPavan).*",
+            f"\n\n\n *ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇꜱᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ʙᴏᴛ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ ᴀᴛ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ᴀɴᴅ ᴛᴏ ᴋᴇᴇᴘ ʏᴏᴜʀꜱᴇʟꜰ ᴜᴘᴅᴀᴛᴇᴅ ᴀʙᴏᴜᴛ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ᴊᴏɪɴ* [ᴛʜᴇ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ](https://t.me/TheCreatorPavan).",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -454,30 +454,32 @@ def aries_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Admins Settings", callback_data="aboutmanu_permis"
+                            text="ᴀᴅᴍɪɴs ꜱᴛɪɴɢ", callback_data="aboutmanu_permis"
                         ),
                         InlineKeyboardButton(
-                            text="Anti Spam", callback_data="aboutmanu_spamprot"
+                            text="ᴀɴᴛɪ ꜱᴘᴀᴍ", callback_data="aboutmanu_spamprot"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Music Setup", callback_data="aboutmanu_cbguide"
+                            text="ᴍᴜꜱɪᴄ ꜱᴇᴛᴜᴘ", callback_data="aboutmanu_cbguide"
                         ),
                     ],
-                    [InlineKeyboardButton(text="Back", callback_data="aboutmanu_")],
+                    [InlineKeyboardButton(text="🔙 ʜᴏᴍᴇ ʙᴀᴄᴋ", callback_data="aboutmanu_")],
                 ]
             ),
         )
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
-            text=f"*Aries Is the redisigned version of Daisy and Saitama And Othrer for the best performance.*"
-            f"\n\nAries source code was rewritten by @IdzXartez and All Of Conrtibutor For Help Aries"
-            f"\n\nIf Any Question About aries, \nLet Us Know At @Idzeroidsupport.",
+            text=f"*Creator Pavan Is the redisigned version of Daisy and Saitama And Othrer for the best performance.*"
+            f"\n\nFrom our ability we try to make it easier and faster."
+            f"\n\nThe Credit of redesigning to @PavanxD and @OP_Aayush"
+            f"\n\nIf Any Question About Creator Pavan Bot, Let Us Know At @CreatorPavanSupport."
+            f"\n\n\n*© @TheCreatorPavan*
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="aboutmanu_")]]
+                [[InlineKeyboardButton(text="🔙 ʜᴏᴍᴇ ʙᴀᴄᴋ", callback_data="aboutmanu_")]]
             ),
         )
 
@@ -492,7 +494,7 @@ def aries_about_callback(update, context):
             f"\n\nThe message very clearly says that you need these rights - <i>not {dispatcher.bot.first_name}.</i>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="aboutmanu_")]]
+                [[InlineKeyboardButton(text="🔙 ʜᴏᴍᴇ ʙᴀᴄᴋ", callback_data="aboutmanu_")]]
             ),
         )
     elif query.data == "aboutmanu_spamprot":
@@ -528,20 +530,20 @@ def aries_about_callback(update, context):
         query.message.edit_text(
             text=f"<b> ｢ Terms and Conditions 」</b>\n"
             f"\n<i>To Use This Bot, You Need To Read Terms and Conditions Carefully.</i>\n"
-            f"\n✪ We always respect your privacy \n  We never log into bot's api and spying on you \n  We use a encripted database \n  Bot will automatically stops if someone logged in with api."
-            f"\n✪ Always try to keep credits, so \n  This hardwork is done by @IdzXartez spending many sleepless nights.. So, Respect it."
-            f"\n✪ Some modules in this bot is owned by different authors, So, \n  All credits goes to them \n  Also for <b>Paul Larson for Marie</b>."
-            f"\n✪ If you need to ask anything about \n  this bot, Go @Idzeroidsupport."
-            f"\n✪ If you asking nonsense in Support \n  Chat, you will get warned/banned."
-            f"\n✪ All api's we used owned by originnal authors \n  Some api's we use Free version \n  Please don't overuse AI Chat."
-            f"\n\nFor any kind of help, related to this bot, Join @idzeroidsupport."
+            f"\n✪ We always respect your privacy. We never log into bot's api and spying on you. We use a encripted database. Bot will automatically stops if someone logged in with api."
+            f"\n✪ This hardwork is done by @CreatorPavanNetwork spending many sleepless nights.. So, Respect it."
+            f"\n✪ Some modules in this bot is owned by different authors, So, All credits goes to them Also for <b>Paul Larson for Marie</b>."
+            f"\n✪ If you need to ask anything about this bot, Go @CreatorPavanSupport."
+            f"\n✪ If you asking nonsense in Support Chat, you will get warned/banned."
+            f"\n✪ All api's we used owned by originnal authors. Some api's we use Free version. Please don't overuse AI Chat."
+            f"\n\nFor any kind of help, related to this bot, Join @CreatorPavanSupport."
             f"\n\n<i>Terms & Conditions will be changed anytime</i>\n",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         
-                        InlineKeyboardButton(text="Back", callback_data="aboutmanu_"),
+                        InlineKeyboardButton(text="🔙 ʜᴏᴍᴇ ʙᴀᴄᴋ", callback_data="aboutmanu_"),
                     ]
                 ]
             ),
@@ -549,24 +551,24 @@ def aries_about_callback(update, context):
     elif query.data == "aboutmanu_cbguide":
         query.message.edit_text(
             text=f"* ｢ How To Setup Music 」*\n"
-            f"\n1. **first, add me to your group."
-            f"\n2. **then promote me as admin and give all permissions except anonymous admin."
-            f"\n3. **after promoting me, type /admincache in group to update the admin list."
-            f"\n4. **add @IdzMusic to your group."
-            f"\n5. **turn on the video chat first before start to play music.\n\n"
-            f"\n📌 **if the userbot not joined to video chat, make sure if the video chat already turned on, or you can ask Admins in @idzeroidsupport.**\n"
-            f"\n⚡ __Powered by Aries A.I__\n",
+            f"\n\n🔹 **ꜰɪʀꜱᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ᴜʀ ɢʀᴏᴜᴘ.**"
+            f"\n\n🔹 **ᴛʜᴇɴ ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ᴀꜱ ᴀᴅᴍɪɴ ᴀɴᴅ ɢɪᴠᴇ ᴀʟʟ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ᴇxᴄᴇᴘᴛ ᴀɴᴏɴʏᴍᴏᴜꜱ ᴀᴅᴍɪɴ.**"
+            f"\n\n🔹 **ᴀꜰᴛᴇʀ ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ꜱᴛᴀʀᴛ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴏꜰ ᴜʀ ɢʀᴏᴜᴘ ʙᴇꜰᴏʀᴇ ᴛʜᴀᴛ ꜱᴇɴᴅ** `/reload` **ᴄᴏᴍᴍᴀɴᴅ ɪɴ ᴜʀ ᴄʜᴀᴛ ɢʀᴏᴜᴘ.**"
+            f"\n\n🔹 **ᴛʜᴇɴ ꜱᴇɴᴅ ᴘʟᴀʏ ᴄᴏᴍᴍᴀɴᴅ ᴀɴᴅ ᴜʀ ꜱᴏɴɢ ɴᴀᴍᴇ.**"
+            f"\n\n🔹 **ᴍᴀᴋᴇ ꜱᴜʀᴇ ᴜ ꜱᴛᴀʀᴛᴇᴅ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ʙᴇꜰᴏʀᴇ ᴛʜᴀᴛ**\n\n"
+            f"\n\n**ɪꜰ ᴀɴʏ ᴛʏᴘᴇ ᴏꜰ ᴇʀʀᴏʀ ᴡɪʟʟ ʙᴇ ᴄᴏᴍᴇꜱ ᴛʜᴇɴ ᴜ ᴄᴀɴ ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ ᴀᴛ ᴏᴜʀ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ɢʀᴏᴜᴘ.**\n"
+            f"\n\n🎵 __Powered by Creator Pavan Server__\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         
                         InlineKeyboardButton(
-                            text="Music Commands", callback_data="aboutmanu_cbhelps"
+                            text="ᴍᴜꜱɪᴄ ᴄᴏᴍᴍᴀɴᴅꜱ ʟɪꜱᴛ", callback_data="aboutmanu_cbhelps"
                         ),
                     ],
                     [ 
-                      InlineKeyboardButton(text="Back 🔙", callback_data="aboutmanu_back"),
+                      InlineKeyboardButton(text="🔙 ʜᴏᴍᴇ ʙᴀᴄᴋ", callback_data="aboutmanu_back"),
                     ],
                 ]
             ),
@@ -574,26 +576,26 @@ def aries_about_callback(update, context):
     elif query.data == "aboutmanu_cbhelps":
         query.message.edit_text(
             text=f"* ｢ Music Command 」*\n"
-            f"\n1. **/play (name song) for playing music."
-            f"\n2. **/pause for paused music."
-            f"\n3. **/resume for resume music."
-            f"\n4. **/stop or /end for end music playing."
-            f"\n5. **/music (name song) for download song."
-            f"\n6. **/video (name video) for download video."
-            f"\n7. **/lyrics for searching lyrics.\n\n"
-            f"\n📌 **Also you can download music or video with push button menu.**\n"
-            f"\n⚡ __Powered by Aries A.I__\n",
+            f"\n\n1️⃣ »**/play [ ꜱᴏɴɢ ɴᴀᴍᴇ ]  :  ꜰᴏʀ ᴘʟᴀʏɪɴɢ ᴜʀ ꜱᴏɴɢ.**"
+            f"\n\n2️⃣ »**/pause :  ꜰᴏʀ ᴘᴀᴜꜱᴇᴅ ꜱᴛʀᴇᴀᴍɪɴɢ.**"
+            f"\n\n3️⃣ »**/resume : ꜰᴏʀ ʀᴇꜱᴜᴍᴇ ꜱᴛʀᴇᴀᴍɪɴɢ.**"
+            f"\n\n4️⃣ »**/stop or /end :  ꜰᴏʀ ᴇɴᴅ ꜱᴛʀᴇᴀᴍɪɴɢ.**"
+            f"\n\n5️⃣ »**/song [ ꜱᴏɴɢ ɴᴀᴍᴇ ]  :  ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴏɴɢ.**"
+            f"\n\n6️⃣ »**/video[ ꜱᴏɴɢ ɴᴀᴍᴇ ]  :  ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏ.**"
+            f"\n\n7️⃣ » **/search ꜰᴏʀ ꜱᴇᴀʀᴄʜɪɴɢ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ ꜱᴇʀᴠᴇʀ.**\n\n"
+            f"\n\n🌸 **ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴍᴏʀᴇ ᴍᴜꜱɪᴄ ᴘʟᴀʏᴇʀ ꜰᴇᴀᴛᴜʀᴇꜱ ᴛʜᴇɴ ᴜ ᴄᴀɴ ᴀᴅᴅ ᴏᴜʀ ꜱᴘᴇᴄɪᴀʟ ᴍᴜꜱɪᴄ ʙᴏᴛꜱ ʙʏ** [ᴄʟɪᴄᴋɪɴɢ ʜᴇʀᴇ](https://t.me/TheCreatorPavan/80).\n"
+            f"\n\n\n**© @TheCreatorPavan**",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="How to use", callback_data="aboutmanu_cbguide"
+                            text="ʜᴏᴡ ᴛᴏ ᴜꜱᴇ", callback_data="aboutmanu_cbguide"
                         ),
                         
                     ],
                    [
-                       InlineKeyboardButton(text="Back 🔙", callback_data="aboutmanu_back"),
+                       InlineKeyboardButton(text="🔙 ʜᴏᴍᴇ ʙᴀᴄᴋ", callback_data="aboutmanu_back"),
                    ],
                 ]
             ),
@@ -632,21 +634,21 @@ def get_help(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Help",
+                            text="ʜᴇʟᴘ ᴀɴᴅ ᴄᴍɴᴅ",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Support", url=f"https://t.me/CreatorPavanSupport"
+                            text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/CreatorPavanSupport"
                         ),
                         InlineKeyboardButton(
-                            text="Updates", url="https://t.me/theCreatorPavan"
+                            text="ᴜᴘᴅᴀᴛᴇꜱ", url="https://t.me/theCreatorPavan"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Music Setup", callback_data="aboutmanu_cbguide"
+                            text="ᴍᴜꜱɪᴄ ꜱᴇᴛᴜᴘ", callback_data="aboutmanu_cbguide"
                         ),
                     ],
                 ]
