@@ -85,12 +85,12 @@ PM_START_TEXT = """
 buttons = [
     [
                         InlineKeyboardButton(
-                            text="ᴍᴜꜱɪᴄ ꜱᴇᴛᴜᴘ", callback_data="aboutmanu_cbguide"
+                            text="ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="help_back"
                         ),
                     ],
     [
         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="aboutmanu_"),
-        InlineKeyboardButton(text="ᴄʀᴇᴅɪᴛs", callback_data="aboutmanu_credit"),
+        InlineKeyboardButton(text="ᴍᴜꜱɪᴄ", callback_data="aboutmanu_cbguide"),
         
                         
     ],
@@ -99,11 +99,9 @@ buttons = [
         InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ", url="http://t.me/TheCreatorPavan"),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="help_back"),
-    ],[
         InlineKeyboardButton(
-            text=" ➕ ᴀᴅᴅ ᴛᴏ ᴜʀ ꜱᴜᴘᴇʀ ɢʀᴏᴜᴘ ➕ ",
-            url="t.me/idzeroid_bot?startgroup=true",
+            text=" 🤖 ᴀᴅᴅ ᴛᴏ ᴜʀ ꜱᴜᴘᴇʀ ɢʀᴏᴜᴘ 🤖",
+            url="t.me/creatorpavannetworkbot?startgroup=true",
         ),
     ],
     
@@ -411,26 +409,26 @@ def aries_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="How To Use Me", callback_data="aboutmanu_howto"
+                            text="ᴄʀᴇᴅɪᴛꜱ", callback_data="aboutmanu_credit"
                         ),
                         InlineKeyboardButton(
-                            text="T.A.C", callback_data="aboutmanu_tac"
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="Admins Settings", callback_data="aboutmanu_permis"
-                        ),
-                        InlineKeyboardButton(
-                            text="Anti Spam", callback_data="aboutmanu_spamprot"
+                            text="ᴛ.ᴀ.ᴄ", callback_data="aboutmanu_tac"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Music System", callback_data="aboutmanu_cbguide"
+                            text="ᴀᴅᴍɪɴs ꜱᴛɪɴɢ", callback_data="aboutmanu_permis"
+                        ),
+                        InlineKeyboardButton(
+                            text="ᴀɴᴛɪ ꜱᴘᴀᴍ", callback_data="aboutmanu_spamprot"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="ʜᴏᴡ ᴛᴏ ᴜꜱᴇ", callback_data="aboutmanu_howto"
                         )
                     ],
-                    [InlineKeyboardButton(text="Back", callback_data="aboutmanu_back")],
+                    [InlineKeyboardButton(text="🔙 ʜᴏᴍᴇ ʙᴀᴄᴋ", callback_data="aboutmanu_back")],
                 ]
             ),
         )
