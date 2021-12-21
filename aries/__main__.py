@@ -87,28 +87,32 @@ Made specifically to manage your group , I specialize in managing Entertainment 
 
 buttons = [
     [
-        InlineKeyboardButton(text=" ｢ Details 」", callback_data="aboutmanu_"),
-        InlineKeyboardButton(text="Credits", callback_data="aboutmanu_credit"),
-        InlineKeyboardButton(text="Help & Commands", callback_data="help_back"),
-                        
-    ],
-    [
-        InlineKeyboardButton(text=" ｢ Support 」", url="http://t.me/idzeroidsupport"),
-        InlineKeyboardButton(text=" ｢ Update 」", url="http://t.me/idzeroid"),
-    ],
-    [
                         InlineKeyboardButton(
                             text="Music Setup", callback_data="aboutmanu_cbguide"
                         ),
                     ],
     [
+        InlineKeyboardButton(text="About", callback_data="aboutmanu_"),
+        InlineKeyboardButton(text="Credits", callback_data="aboutmanu_credit"),
+        
+                        
+    ],
+    [
+        InlineKeyboardButton(text="Support", url="http://t.me/idzeroidsupport"),
+        InlineKeyboardButton(text="Update", url="http://t.me/idzeroid"),
+    ],
+    [
         InlineKeyboardButton(
-            text=" ➕ ｢ Summon Me 」➕ ",
+            text=" ➕ Add me to ur group ➕ ",
             url="t.me/idzeroid_bot?startgroup=true",
         ),
-    ],[
+    ],
+    [
+        InlineKeyboardButton(text="Help & Commands", callback_data="help_back"),
+    ],
+    [
         
-        InlineKeyboardButton(text=" [close] ", callback_data="close"),
+        InlineKeyboardButton(text="Click For Close", callback_data="close"),
         
     ],
     
