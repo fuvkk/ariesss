@@ -73,36 +73,36 @@ GROUP_START_IMG = (
 )
 
 PM_START_TEXT = """
-ʜᴇʏ ᴛʜᴇʀᴇ, ᴛʜɪꜱ ɪꜱ [ᴄʀᴇᴀᴛᴏʀ.](https://telegra.ph/file/c20a6da05abc7a15297d1.jpg)
-ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ɴᴇxᴛ ɢᴇɴᴇʀᴀᴛɪᴏɴ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ᴡʜɪᴄʜ ᴡɪʟʟ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ᴜʀ ꜱᴜᴘᴇʀ ɢʀᴏᴜᴘ ᴇᴀꜱɪʟʏ ᴀɴᴅ ʜᴇʟᴘꜱ ᴜ ᴛᴏ ᴘʀᴏᴛᴇᴄᴛɪɴɢ ʏᴏᴜʀ ɢʀᴏᴜᴘ ꜰʀᴏᴍ ꜱᴘᴀᴍᴍᴇʀꜱ ᴀɴᴅ ꜱᴄᴀᴍᴍᴇʀꜱ
+**ʜᴇʏ ᴛʜᴇʀᴇ, ᴛʜɪꜱ ɪꜱ [{}](https://telegra.ph/file/c20a6da05abc7a15297d1.jpg)
+ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ɴᴇxᴛ ɢᴇɴᴇʀᴀᴛɪᴏɴ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ᴡʜɪᴄʜ ᴡɪʟʟ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ᴜʀ ꜱᴜᴘᴇʀ ɢʀᴏᴜᴘ ᴇᴀꜱɪʟʏ ᴀɴᴅ ʜᴇʟᴘꜱ ᴜ ᴛᴏ ᴘʀᴏᴛᴇᴄᴛɪɴɢ ʏᴏᴜʀ ɢʀᴏᴜᴘ ꜰʀᴏᴍ ꜱᴘᴀᴍᴍᴇʀꜱ ᴀɴᴅ ꜱᴄᴀᴍᴍᴇʀꜱ.**
 - - - - - - - - - - - - - - - - -. - - - - - -
-• *ᴡᴏʀᴋɪɴɢ ᴛɪᴍᴇ :* `{}`
-• `{}` *ᴜꜱᴇʀꜱ, ᴀᴄʀᴏꜱꜱ* `{}` *ᴄʜᴀᴛꜱ.*
+• `ᴡᴏʀᴋɪɴɢ ᴛɪᴍᴇ : {}`
+• `{} ᴜꜱᴇʀꜱ, ᴀᴄʀᴏꜱꜱ {} ᴄʜᴀᴛꜱ.`
 - - - - - - - - - - - - - - - - - - - - - - - 
-ᴋɴᴏᴡ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ ʙʏ ᴜꜱɪɴɢ ꜰᴏʟʟᴏᴡɪɴɢ ʙᴜᴛᴛᴏɴꜱ.
+**ᴋɴᴏᴡ ᴍᴏʀᴇ ʙʏ ᴜꜱɪɴɢ ꜰᴏʟʟᴏᴡɪɴɢ ʙᴜᴛᴛᴏɴꜱ.**
 """
 
 buttons = [
     [
                         InlineKeyboardButton(
-                            text="Music Setup", callback_data="aboutmanu_cbguide"
+                            text="ᴍᴜꜱɪᴄ ꜱᴇᴛᴜᴘ", callback_data="aboutmanu_cbguide"
                         ),
                     ],
     [
-        InlineKeyboardButton(text="About", callback_data="aboutmanu_"),
-        InlineKeyboardButton(text="Credits", callback_data="aboutmanu_credit"),
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="aboutmanu_"),
+        InlineKeyboardButton(text="ᴄʀᴇᴅɪᴛs", callback_data="aboutmanu_credit"),
         
                         
     ],
     [
-        InlineKeyboardButton(text="Support", url="http://t.me/idzeroidsupport"),
-        InlineKeyboardButton(text="Update", url="http://t.me/idzeroid"),
+        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url="http://t.me/CreatorPavanSupport"),
+        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ", url="http://t.me/TheCreatorPavan"),
     ],
     [
-        InlineKeyboardButton(text="Help & Commands", callback_data="help_back"),
+        InlineKeyboardButton(text="ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="help_back"),
     ],[
         InlineKeyboardButton(
-            text=" ➕ Add me to ur group ➕ ",
+            text=" ➕ ᴀᴅᴅ ᴛᴏ ᴜʀ ꜱᴜᴘᴇʀ ɢʀᴏᴜᴘ ➕ ",
             url="t.me/idzeroid_bot?startgroup=true",
         ),
     ],
