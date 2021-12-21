@@ -475,7 +475,7 @@ def aries_about_callback(update, context):
             f"\n\nFrom our ability we try to make it easier and faster."
             f"\n\nThe Credit of redesigning to @PavanxD and @OP_Aayush"
             f"\n\nIf Any Question About Creator Pavan Bot, Let Us Know At @CreatorPavanSupport."
-            f"\n\n\n*© @TheCreatorPavan*
+            f"\n\n\n*© @TheCreatorPavan*",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
