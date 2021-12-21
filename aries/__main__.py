@@ -73,7 +73,7 @@ GROUP_START_IMG = (
 )
 
 PM_START_TEXT = """
-Hello there, [👋](https://telegra.ph/file/ac893610cae84f302b2da.jpg) I'm {}.
+Hello there, [👋](https://telegra.ph/file/c20a6da05abc7a15297d1.jpg) I'm {}.
 Im Powerfull Management Bot And I Will Help In Managing Your Group.
 Maintained by : [Aryza](https://t.me/idzxartez)
 Founder And Dev Of : [IDZEROID SYNDICATES](https://t.me/idzeroidsupport).
