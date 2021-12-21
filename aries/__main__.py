@@ -112,13 +112,13 @@ buttons = [
 
 
 HELP_STRINGS = f"""
-*ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ :*
-➲ /start : ꜱᴛᴀʀᴛ ᴍᴇ. ᴀʟʀᴇᴀᴅʏ ꜱᴛᴀʀᴛᴇᴅ.
-➲ /help  : ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ ꜱᴇᴄᴛɪᴏɴ.
-➲ /settings :
-  ‣ ɪɴ ᴘᴍ : ᴡɪʟʟ ꜱᴇɴᴅ ʏᴏᴜ ʏᴏᴜʀ ꜱᴇᴛᴛɪɴɢꜱ ꜰᴏʀ ᴀʟʟ ꜱᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴏᴅᴜʟᴇꜱ.
-  ‣ ɪɴ ɢʀᴏᴜᴘ : ᴡɪʟʟ ʀᴇᴅɪʀᴇᴄᴛ ʏᴏᴜ ᴛᴏ ᴘᴍ, ᴡɪᴛʜ ᴀʟʟ ᴛʜᴀᴛ ᴄʜᴀᴛ'ꜱ ꜱᴇᴛᴛɪɴɢꜱ.
-» ꜰᴏʀ ᴋɴᴏᴡɪɴɢ ᴀ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴏꜰ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ʙᴏᴛ ᴊᴜꜱᴛ ᴘʀᴇꜱꜱ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴀɴᴅ ʀᴇᴀᴅ ᴄᴏᴍᴍᴀɴᴅꜱ ᴇxᴘʟᴀɴᴀᴛɪᴏɴ.*
+*Main Commands :* [Saint Aries](https://telegra.ph/file/ac893610cae84f302b2da.jpg)
+✪ /start: Starts me! You've probably already used this.
+✪ /help: Click this, I'll let you know about myself!
+✪ /donate: You can support my creater using this command.
+✪ /settings: 
+   ◔ in PM: will send you your settings for all supported modules.
+   ◔ in a Group: will redirect you to pm, with all that chat's settings.
 """.format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
