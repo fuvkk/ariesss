@@ -88,19 +88,30 @@ Made specifically to manage your group , I specialize in managing Entertainment 
 buttons = [
     [
         InlineKeyboardButton(text=" ｢ Details 」", callback_data="aboutmanu_"),
-        InlineKeyboardButton(text=" ｢ Inline 」", switch_inline_query_current_chat=""),
+        InlineKeyboardButton(text="Credits", callback_data="aboutmanu_credit"),
+        InlineKeyboardButton(text="Help & Commands", callback_data="help_back"),
+                        
     ],
+    [
+        InlineKeyboardButton(text=" ｢ Support 」", url="http://t.me/idzeroidsupport"),
+        InlineKeyboardButton(text=" ｢ Update 」", url="http://t.me/idzeroid"),
+    ],
+    [
+                        InlineKeyboardButton(
+                            text="Music Setup", callback_data="aboutmanu_cbguide"
+                        ),
+                    ],
     [
         InlineKeyboardButton(
             text=" ➕ ｢ Summon Me 」➕ ",
             url="t.me/idzeroid_bot?startgroup=true",
         ),
+    ],[
+        
+        InlineKeyboardButton(text=" [close] ", callback_data="close"),
+        
     ],
-    [
-        InlineKeyboardButton(text=" ｢ Support 」", url="http://t.me/idzeroidsupport"),
-        InlineKeyboardButton(text=" [❌] ", callback_data="close"),
-        InlineKeyboardButton(text=" ｢ Update 」", url="http://t.me/idzeroid"),
-    ],
+    
 ]
 
 
@@ -551,12 +562,14 @@ def aries_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="[⇜]", callback_data="aboutmanu_cbhelps"
+                            text="[How to use]", callback_data="aboutmanu_cbhelps"
                         ),
-                        InlineKeyboardButton(text="🔄", callback_data="aboutmanu_howto"),
                         InlineKeyboardButton(
-                            text="[⇝]", callback_data="aboutmanu_cbhelps"
+                            text="[Music Commands]", callback_data="aboutmanu_cbhelps"
                         ),
+                    ],
+                    [ 
+                      InlineKeyboardButton(text="🔄", callback_data="aboutmanu_howto"),
                     ],
                 ]
             ),
@@ -578,13 +591,15 @@ def aries_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="[⇜]", callback_data="aboutmanu_cbguide"
+                            text="[How to use]", callback_data="aboutmanu_cbguide"
                         ),
-                        InlineKeyboardButton(text="🔄", callback_data="aboutmanu_howto"),
                         InlineKeyboardButton(
-                            text="[⇝]", callback_data="aboutmanu_cbguide"
+                            text="[Music Commands]", callback_data="aboutmanu_cbguide"
                         ),
                     ],
+                   [
+                       InlineKeyboardButton(text="Back", callback_data="aboutmanu_howto"),
+                   ],
                 ]
             ),
         )
