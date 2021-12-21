@@ -554,7 +554,7 @@ def aries_about_callback(update, context):
                 ]
             ),
         )
-    elif query.data == "aboutmanu_cbmusichow":
+    elif query.data == "aboutmanu_cbguide":
         query.message.edit_text(
             text=f"* ｢ How To Setup Music 」*\n"
             f"\n1. **first, add me to your group."
@@ -568,11 +568,9 @@ def aries_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
+                        
                         InlineKeyboardButton(
-                            text="How to use", callback_data="aboutmanu_cbmusichow"
-                        ),
-                        InlineKeyboardButton(
-                            text="Music Commands", callback_data="aboutmanu_cbmusiccmd"
+                            text="Music Commands", callback_data="aboutmanu_cbhelps"
                         ),
                     ],
                     [ 
@@ -581,7 +579,7 @@ def aries_about_callback(update, context):
                 ]
             ),
         )
-    elif query.data == "aboutmanu_cbmusiccmd":
+    elif query.data == "aboutmanu_cbhelps":
         query.message.edit_text(
             text=f"* ｢ Music Command 」*\n"
             f"\n1. **/play (name song) for playing music."
@@ -598,11 +596,9 @@ def aries_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="How to use", callback_data="aboutmanu_cbmusichow"
+                            text="How to use", callback_data="aboutmanu_cbguide"
                         ),
-                        InlineKeyboardButton(
-                            text="Music Commands", callback_data="aboutmanu_cbmusiccmd"
-                        ),
+                        
                     ],
                    [
                        InlineKeyboardButton(text="Back 🔙", callback_data="aboutmanu_howto"),
