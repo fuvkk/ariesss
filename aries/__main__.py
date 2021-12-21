@@ -102,19 +102,14 @@ buttons = [
         InlineKeyboardButton(text="Update", url="http://t.me/idzeroid"),
     ],
     [
+        InlineKeyboardButton(text="Help & Commands", callback_data="help_back"),
+    ],[
         InlineKeyboardButton(
             text=" ➕ Add me to ur group ➕ ",
             url="t.me/idzeroid_bot?startgroup=true",
         ),
     ],
-    [
-        InlineKeyboardButton(text="Help & Commands", callback_data="help_back"),
-    ],
-    [
-        
-        InlineKeyboardButton(text="Click For Close", callback_data="close"),
-        
-    ],
+    
     
 ]
 
@@ -341,12 +336,14 @@ def help_button(update, context):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Back", callback_data="help_back"
-                            ),
-                        ],
-                        [
-                            InlineKeyboardButton(
                                 text="Support", url="https://t.me/idzeroidsupport"
+                            ),
+                            InlineKeyboardButton(
+                                text="Updated", url="https://t.me/idzeroidsupport"
+                            ),
+                        ],[
+                            InlineKeyboardButton(
+                                text="Back", callback_data="help_back"
                             ),
                         ],
                     ]
@@ -425,7 +422,15 @@ def aries_about_callback(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Help & Commands", callback_data="help_back"
+                            text="Admins Settings", callback_data="aboutmanu_permis"
+                        ),
+                        InlineKeyboardButton(
+                            text="Anti Spam", callback_data="aboutmanu_spamprot"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="Music System", callback_data="aboutmanu_cbguide"
                         )
                     ],
                     [InlineKeyboardButton(text="Back", callback_data="aboutmanu_back")],
