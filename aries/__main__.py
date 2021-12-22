@@ -471,13 +471,19 @@ def aries_about_callback(update, context):
         )
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
-            text=f"*Aries Is the redisigned version of Daisy and Saitama And Othrer for the best performance.*"
-            f"\n\nAries source code was rewritten by @IdzXartez and All Of Conrtibutor For Help Aries"
-            f"\n\nIf Any Question About aries, \nLet Us Know At @Idzeroidsupport.",
+            text=f"*Creator Pavan Is the redisigned version of Daisy and Saitama And Othrer for the best performance.*"
+            f"\n\nFrom our ability we try to make it easier and faster."
+            f"\n\nThe Credit of redesigning to Pavan & Aayu."
+            f"\n\nIf Any Question About Creator Pavan Bot, Let Us Know At @CreatorPavanSupport.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="aboutmanu_tac")]]
+                [
+                   [
+                      InlineKeyboardButton(text="𓄂𝗣𝗮𝘃𝗮𝗻'𝘅𝗗", url="http://t.me/PavanxD"),
+                      InlineKeyboardButton(text="『𝗔𝗔𝗬𝗨𝗦𝗛』", url="http://t.me/op_aayush"),
+                   ],
+        [InlineKeyboardButton(text="🔙 ʜᴏᴍᴇ ʙᴀᴄᴋ", callback_data="aboutmanu_")]]
             ),
         )
 
