@@ -396,7 +396,7 @@ Commands:
  - /cas: Info about CAS. (What is CAS?)
 """
 
-__mod_name__ = "CAS"
+__mod_name__ = "ᴄᴀs"
 
 SETCAS_HANDLER = CommandHandler(
     "setcas", setcas, filters=Filters.chat_type.groups, run_async=True
