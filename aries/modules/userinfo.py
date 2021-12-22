@@ -361,16 +361,9 @@ def info(update: Update, context: CallbackContext):
                 caption=(text),
                 reply_markup=InlineKeyboardMarkup(
                     [
+                        
                         [
-                            InlineKeyboardButton(
-                                "Health", url="https://t.me/IDZEROID/15"
-                            ),
-                            InlineKeyboardButton(
-                                "Disaster", url="https://t.me/IDZEROID/14"
-                            ),
-                        ],
-                        [
-                            InlineKeyboardButton(" [❌] ", callback_data="close"),
+                            InlineKeyboardButton("Close", callback_data="close"),
                         ],
                     ]
                 ),
