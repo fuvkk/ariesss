@@ -579,33 +579,6 @@ def aries_about_callback(update, context):
                 ]
             ),
         )
-    elif query.data == "aboutmanu_cbplay":
-        query.message.edit_text(
-            text=f"* ｢ Music Command 」*\n"
-            f"\n\n1️⃣ »**/play [ ꜱᴏɴɢ ɴᴀᴍᴇ ]  :  ꜰᴏʀ ᴘʟᴀʏɪɴɢ ᴜʀ ꜱᴏɴɢ.**"
-            f"\n\n2️⃣ »**/pause :  ꜰᴏʀ ᴘᴀᴜꜱᴇᴅ ꜱᴛʀᴇᴀᴍɪɴɢ.**"
-            f"\n\n3️⃣ »**/resume : ꜰᴏʀ ʀᴇꜱᴜᴍᴇ ꜱᴛʀᴇᴀᴍɪɴɢ.**"
-            f"\n\n4️⃣ »**/stop or /end :  ꜰᴏʀ ᴇɴᴅ ꜱᴛʀᴇᴀᴍɪɴɢ.**"
-            f"\n\n5️⃣ »**/song [ ꜱᴏɴɢ ɴᴀᴍᴇ ]  :  ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴏɴɢ.**"
-            f"\n\n6️⃣ »**/video[ ꜱᴏɴɢ ɴᴀᴍᴇ ]  :  ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏ.**"
-            f"\n\n7️⃣ » **/search ꜰᴏʀ ꜱᴇᴀʀᴄʜɪɴɢ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ ꜱᴇʀᴠᴇʀ.**\n\n"
-            f"\n\n🌸 **ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴍᴏʀᴇ ᴍᴜꜱɪᴄ ᴘʟᴀʏᴇʀ ꜰᴇᴀᴛᴜʀᴇꜱ ᴛʜᴇɴ ᴜ ᴄᴀɴ ᴀᴅᴅ ᴏᴜʀ ꜱᴘᴇᴄɪᴀʟ ᴍᴜꜱɪᴄ ʙᴏᴛꜱ ʙʏ** [ᴄʟɪᴄᴋɪɴɢ ʜᴇʀᴇ](https://t.me/TheCreatorPavan/80).\n"
-            f"\n\n\n**© @TheCreatorPavan**",
-            parse_mode=ParseMode.MARKDOWN,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="ʜᴏᴡ ᴛᴏ ᴜꜱᴇ", callback_data="aboutmanu_cbguide"
-                        ),
-                        
-                    ],
-                   [
-                       InlineKeyboardButton(text="🔙 ʜᴏᴍᴇ ʙᴀᴄᴋ", callback_data="aboutmanu_back"),
-                   ],
-                ]
-            ),
-        )
     elif query.data == "aboutmanu_cbhelps":
         query.message.edit_text(
             text=f"* ｢ Music Command 」*\n"
@@ -616,7 +589,7 @@ def aries_about_callback(update, context):
             f"\n\n5️⃣ »**/song [ ꜱᴏɴɢ ɴᴀᴍᴇ ]  :  ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴏɴɢ.**"
             f"\n\n6️⃣ »**/video[ ꜱᴏɴɢ ɴᴀᴍᴇ ]  :  ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏ.**"
             f"\n\n7️⃣ » **/search ꜰᴏʀ ꜱᴇᴀʀᴄʜɪɴɢ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ ꜱᴇʀᴠᴇʀ.**\n\n"
-            f"\n\n🌸 **ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴍᴏʀᴇ ᴍᴜꜱɪᴄ ᴘʟᴀʏᴇʀ ꜰᴇᴀᴛᴜʀᴇꜱ ᴛʜᴇɴ ᴜ ᴄᴀɴ ᴀᴅᴅ ᴏᴜʀ ꜱᴘᴇᴄɪᴀʟ ᴍᴜꜱɪᴄ ʙᴏᴛꜱ ʙʏ** [ᴄʟɪᴄᴋɪɴɢ ʜᴇʀᴇ](https://t.me/TheCreatorPavan/80).\n"
+            f"\n\n🌸 **ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴍᴏʀᴇ ᴍᴜꜱɪᴄ ᴘʟᴀʏᴇʀ ꜰᴇᴀᴛᴜʀᴇꜱ ᴛʜᴇɴ ᴜ ᴄᴀɴ ᴀᴅᴅ ᴏᴜʀ ꜱᴘᴇᴄɪᴀʟ ᴍᴜꜱɪᴄ ʙᴏᴛꜱ : @PavanTunesBot\n"
             f"\n\n\n**© @TheCreatorPavan**",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
@@ -624,9 +597,6 @@ def aries_about_callback(update, context):
                     [
                         InlineKeyboardButton(
                             text="ʜᴏᴡ ᴛᴏ ᴜꜱᴇ", callback_data="aboutmanu_cbguide"
-                        ),
-                        InlineKeyboardButton(
-                            text="play", callback_data="aboutmanu_cbplay"
                         ),
                         
                     ],
