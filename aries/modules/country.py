@@ -107,4 +107,4 @@ Gathered By Aries.</b>
     )
 
 
-__mod_name__ = "country"
+__mod_name__ = "ᴄᴏᴜɴᴛʀʏ"
