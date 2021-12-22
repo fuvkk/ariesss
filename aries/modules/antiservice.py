@@ -7,7 +7,7 @@ from aries import pbot as app
 from aries.utils.dbfunctions import antiservice_off, antiservice_on, is_antiservice_on
 from aries.utils.permissions import adminsOnly
 
-__MODULE__ = "AntiService"
+__MODULE__ = "ᴀ-sᴇʀᴠɪᴄᴇ"
 __HELP__ = """
 Plugin to delete service messages in a chat!
 
