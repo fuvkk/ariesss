@@ -61,4 +61,4 @@ async def paste_func(_, message):
     return await m.edit(link)
 
 
-__mod_name__ = "Paste"
+__mod_name__ = "ᴘᴀsᴛᴇ"
