@@ -7,7 +7,7 @@ from aries import pbot as app
 from aries.modules.mongo.couples_mongo import get_couple, save_couple
 from aries.utils.errors import capture_err
 
-__mod_name__ = "Shippering"
+__mod_name__ = "sʜɪᴘᴘᴇʀɪɴɢ"
 
 # Date and time
 def dt():
