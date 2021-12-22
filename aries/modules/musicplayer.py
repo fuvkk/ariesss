@@ -12,4 +12,4 @@ __help__ = """
 ❍ /video <i>query</i>: download video song.
 ❍ /song <i>query</i>: download song via youtube.
 """
-__mod_name__ = "🔘 Music Player"
+__mod_name__ = "ᴍᴜsɪᴄ"
