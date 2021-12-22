@@ -353,4 +353,4 @@ Aries can protect your group from NSFW senders, Slag word users and also can for
   ❍ `/globalmode <on/off>`*:* Enable|Disable English only mode
   ❍ `/profanity <on/off>`*:* Enable|Disable slag word cleaning
 """
-__mod_name__ = "Shield"
+__mod_name__ = "sʜɪᴇʟᴅ"
