@@ -21,7 +21,7 @@ from aries.modules.log_channel import gloggable
 def add_nsfw(update: Update, context: CallbackContext):
     chat = update.effective_chat
     msg = update.effective_message
-    user = update.effective_user  # Remodified by @EverythingSuckz
+    user = update.effective_user  # Remodified by @Creator_Pavan
     is_nsfw = sql.is_nsfw(chat.id)
     if not is_nsfw:
         sql.set_nsfw(chat.id)
