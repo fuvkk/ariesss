@@ -16,7 +16,7 @@ from aries.arqclient import arq
 from aries.pyroerror import capture_err
 from aries.utils.pastebin import paste
 
-__mod_name__ = "Media"
+__mod_name__ = "ᴍᴇᴅɪᴀ"
 __help__ = """
 
 *AUDIO*
