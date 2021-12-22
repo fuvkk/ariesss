@@ -494,12 +494,7 @@ def aries_about_callback(update, context):
     elif query.data == "aboutmanu_permis":
         query.message.edit_text(
             text=f"<b> ｢ Admin Permissions 」</b>"
-            f"\nTo avoid slowing down, {dispatcher.bot.first_name} caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the /promote command), {dispatcher.bot.first_name} will only find out ~10 minutes later."
-            f"\n\nIF you want to update them immediately, you can use the /admincache command,thta'll force {dispatcher.bot.first_name} to check who the admins are again and their permissions"
-            f"\n\nIf you are getting a message saying:"
-            f"\n<Code>You must be this chat administrator to perform this action!</code>"
-            f"\nThis has nothing to do with {dispatcher.bot.first_name}'s rights; this is all about YOUR permissions as an admin. {dispatcher.bot.first_name} respects admin permissions; if you do not have the Ban Users permission as a telegram admin, you won't be able to ban users with {dispatcher.bot.first_name}. Similarly, to change {dispatcher.bot.first_name} settings, you need to have the Change group info permission."
-            f"\n\nThe message very clearly says that you need these rights - <i>not {dispatcher.bot.first_name}.</i>",
+            f"\n\n*ᴛᴏ ᴀᴠᴏɪᴅ ꜱʟᴏᴡɪɴɢ ᴅᴏᴡɴ, ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ʀᴏʙᴏᴛꜱ ᴄᴀᴄʜᴇꜱ ᴀᴅᴍɪɴ ʀɪɢʜᴛꜱ ꜰᴏʀ ᴇᴀᴄʜ ᴜꜱᴇʀ. ᴛʜɪꜱ ᴄᴀᴄʜᴇ ʟᴀꜱᴛꜱ ᴀʙᴏᴜᴛ 10 ᴍɪɴᴜᴛᴇꜱ ;  ᴛʜɪꜱ ᴍᴀʏ ᴄʜᴀɴɢᴇ ɪɴ ᴛʜᴇ ꜰᴜᴛᴜʀᴇ. ᴛʜɪꜱ ᴍᴇᴀɴꜱ ᴛʜᴀᴛ ɪꜰ ʏᴏᴜ ᴘʀᴏᴍᴏᴛᴇ ᴀ ᴜꜱᴇʀ ᴍᴀɴᴜᴀʟʟʏ (ᴡɪᴛʜᴏᴜᴛ ᴜꜱɪɴɢ ᴛʜᴇ /ᴘʀᴏᴍᴏᴛᴇ ᴄᴏᴍᴍᴀɴᴅ), ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ʀᴏʙᴏᴛ ᴡɪʟʟ ᴏɴʟʏ ꜰɪɴᴅ ᴏᴜᴛ ~10 ᴍɪɴᴜᴛᴇꜱ ʟᴀᴛᴇʀ.*\n*ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜᴘᴅᴀᴛᴇ ᴛʜᴇᴍ ɪᴍᴍᴇᴅɪᴀᴛᴇʟʏ, ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴛʜᴇ /ᴀᴅᴍɪɴᴄᴀᴄʜᴇ ᴄᴏᴍᴍᴀɴᴅ, ᴛʜᴛᴀ'ʟʟ ꜰᴏʀᴄᴇ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ʀᴏʙᴏᴛ ᴛᴏ ᴄʜᴇᴄᴋ ᴡʜᴏ ᴛʜᴇ ᴀᴅᴍɪɴꜱ ᴀʀᴇ ᴀɢᴀɪɴ ᴀɴᴅ ᴛʜᴇɪʀ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ*\n*ɪꜰ ʏᴏᴜ ᴀʀᴇ ɢᴇᴛᴛɪɴɢ ᴀ ᴍᴇꜱꜱᴀɢᴇ ꜱᴀʏɪɴɢ :* `ʏᴏᴜ ᴍᴜꜱᴛ ʙᴇ ᴛʜɪꜱ ᴄʜᴀᴛ ᴀᴅᴍɪɴɪꜱᴛʀᴀᴛᴏʀ ᴛᴏ ᴘᴇʀꜰᴏʀᴍ ᴛʜɪꜱ ᴀᴄᴛɪᴏɴ !`\n*ᴛʜɪꜱ ʜᴀꜱ ɴᴏᴛʜɪɴɢ ᴛᴏ ᴅᴏ ᴡɪᴛʜ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ʀᴏʙᴏᴛ'ꜱ ʀɪɢʜᴛꜱ ; ᴛʜɪꜱ ɪꜱ ᴀʟʟ ᴀʙᴏᴜᴛ ʏᴏᴜʀ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ᴀꜱ ᴀɴ ᴀᴅᴍɪɴ. ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ʀᴏʙᴏᴛ ʀᴇꜱᴘᴇᴄᴛꜱ ᴀᴅᴍɪɴ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ; ɪꜰ ʏᴏᴜ ᴅᴏ ɴᴏᴛ ʜᴀᴠᴇ ᴛʜᴇ ʙᴀɴ ᴜꜱᴇʀꜱ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴀꜱ ᴀ ᴛᴇʟᴇɢʀᴀᴍ ᴀᴅᴍɪɴ, ʏᴏᴜ ᴡᴏɴ'ᴛ ʙᴇ ᴀʙʟᴇ ᴛᴏ ʙᴀɴ ᴜꜱᴇʀꜱ ᴡɪᴛʜ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ʀᴏʙᴏᴛ. ꜱɪᴍɪʟᴀʀʟʏ, ᴛᴏ ᴄʜᴀɴɢᴇ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ʀᴏʙᴏᴛ ꜱᴇᴛᴛɪɴɢꜱ, ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ʜᴀᴠᴇ ᴛʜᴇ ᴄʜᴀɴɢᴇ ɢʀᴏᴜᴘ ɪɴꜰᴏ ᴘᴇʀᴍɪꜱꜱɪᴏɴ.*\n\n*ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ ᴠᴇʀʏ ᴄʟᴇᴀʀʟʏ ꜱᴀʏꜱ ᴛʜᴀᴛ ʏᴏᴜ ɴᴇᴇᴅ ᴛʜᴇꜱᴇ ʀɪɢʜᴛꜱ - ɴᴏᴛ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ʀᴏʙᴏᴛ*",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="🔙 ʜᴏᴍᴇ ʙᴀᴄᴋ", callback_data="aboutmanu_")]]
@@ -586,16 +581,15 @@ def aries_about_callback(update, context):
     elif query.data == "aboutmanu_cbhelps":
         query.message.edit_text(
             text=f"* ｢ Music Command 」*\n"
-            f"\n\n1️⃣ »*/play [ ꜱᴏɴɢ ɴᴀᴍᴇ ]  :  ꜰᴏʀ ᴘʟᴀʏɪɴɢ ᴜʀ ꜱᴏɴɢ.*"
+            f"\n\n1️⃣ »*/play  :  ꜰᴏʀ ᴘʟᴀʏɪɴɢ ᴜʀ ꜱᴏɴɢ.*"
             f"\n\n2️⃣ »*/pause  :  ꜰᴏʀ ᴘᴀᴜꜱᴇᴅ ꜱᴛʀᴇᴀᴍɪɴɢ.*"
             f"\n\n3️⃣ »*/resume  :  ꜰᴏʀ ʀᴇꜱᴜᴍᴇ ꜱᴛʀᴇᴀᴍɪɴɢ.*"
-            f"\n\n4️⃣ »*/stop or /end  :  ꜰᴏʀ ᴇɴᴅ ꜱᴛʀᴇᴀᴍɪɴɢ.*"
-            f"\n\n5️⃣ »*/song [ ꜱᴏɴɢ ɴᴀᴍᴇ ]  :  ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴏɴɢ.*"
-            f"\n\n6️⃣ »*/video[ ꜱᴏɴɢ ɴᴀᴍᴇ ]  :  ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏ.*"
-            f"\n\n7️⃣ »*/search  :  ꜰᴏʀ ꜱᴇᴀʀᴄʜɪɴɢ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ ꜱᴇʀᴠᴇʀ.*"
-            f"\n\n8️⃣ »*/userbotjoin  : ꜰᴏʀ ᴊᴏɪɴɪɴɢ ᴀꜱꜱɪꜱᴛᴀɴᴛ.*"
-            f"\n\n9️⃣ »*/userbotleave  : ꜰᴏʀ ʟᴇᴀᴠᴇꜱ ᴀꜱꜱɪꜱᴛᴀɴᴛ.*"
-            f"\n\n💁🏻 *ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴍᴏʀᴇ ᴍᴜꜱɪᴄ ᴘʟᴀʏᴇʀ ꜰᴇᴀᴛᴜʀᴇꜱ ᴛʜᴇɴ ᴜ ᴄᴀɴ ᴀᴅᴅ ᴏᴜʀ ꜱᴘᴇᴄɪᴀʟ ᴍᴜꜱɪᴄ ʙᴏᴛꜱ : @PavanTunesBot or @CrepanRobot or @FallenMusicBot*\n"
+            f"\n\n4️⃣ »*/end  :  ꜰᴏʀ ᴇɴᴅ ꜱᴛʀᴇᴀᴍɪɴɢ.*"
+            f"\n\n5️⃣ »*/song  :  ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴏɴɢ.*"
+            f"\n\n6️⃣ »*/video  :  ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏ.*"
+            f"\n\n7️⃣ »*/search  :  ꜱᴇᴀʀᴄʜɪɴɢ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ.*"
+            f"\n\n8️⃣ »*/userbotjoin  :  ꜰᴏʀ ᴊᴏɪɴɪɴɢ ᴀꜱꜱɪꜱᴛᴀɴᴛ.*"
+            f"\n\n9️⃣ »*/userbotleave  :  ꜰᴏʀ ʟᴇᴀᴠᴇꜱ ᴀꜱꜱɪꜱᴛᴀɴᴛ.*"
             f"\n\n\n*© @TheCreatorPavan*",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
