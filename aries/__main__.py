@@ -474,12 +474,14 @@ def aries_about_callback(update, context):
             text=f"*Creator Pavan Is the redisigned version of Daisy and Saitama And Othrer for the best performance.*"
             f"\n\nFrom our ability we try to make it easier and faster."
             f"\n\nThe Credit of redesigning to @PavanxD and @OP_Aayush"
-            f"\n\nIf Any Question About Creator Pavan Bot, Let Us Know At @CreatorPavanSupport."
-            f"\n\n\n*© @TheCreatorPavan*",
+            f"\n\nIf Any Question About Creator Pavan Bot, Let Us Know At @CreatorPavanSupport.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="🔙 ʜᴏᴍᴇ ʙᴀᴄᴋ", callback_data="aboutmanu_")]]
+                [[
+        InlineKeyboardButton(text="𓄂𝗣𝗮𝘃𝗮𝗻'𝘅𝗗", url="http://t.me/CreatorPavanSupport"),
+        InlineKeyboardButton(text="『𝗔𝗔𝗬𝗨𝗦𝗛』", url="http://t.me/TheCreatorPavan"),
+    ],[InlineKeyboardButton(text="🔙 ʜᴏᴍᴇ ʙᴀᴄᴋ", callback_data="aboutmanu_")]]
             ),
         )
 
