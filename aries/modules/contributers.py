@@ -52,4 +52,4 @@ async def give_repo(c, m):
     )
 
 
-__mod_name__ = "REPO"
+__mod_name__ = "ʀᴇᴘᴏ"
