@@ -502,21 +502,7 @@ def aries_about_callback(update, context):
             ),
         )
     
-    elif query.data == "aboutmanu_cbplay":
-        query.message.edit_text(
-            text=f"<b> ｢ Admin Permissions 」</b>"
-            f"\nTo avoid slowing down, {dispatcher.bot.first_name} caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the /promote command), {dispatcher.bot.first_name} will only find out ~10 minutes later."
-            f"\n\nIF you want to update them immediately, you can use the /admincache command,thta'll force {dispatcher.bot.first_name} to check who the admins are again and their permissions"
-            f"\n\nIf you are getting a message saying:"
-            f"\n<Code>You must be this chat administrator to perform this action!</code>"
-            f"\nThis has nothing to do with {dispatcher.bot.first_name}'s rights; this is all about YOUR permissions as an admin. {dispatcher.bot.first_name} respects admin permissions; if you do not have the Ban Users permission as a telegram admin, you won't be able to ban users with {dispatcher.bot.first_name}. Similarly, to change {dispatcher.bot.first_name} settings, you need to have the Change group info permission."
-            f"\n\nThe message very clearly says that you need these rights - <i>not {dispatcher.bot.first_name}.</i>",
-            parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="🔙 ʜᴏᴍᴇ ʙᴀᴄᴋ", callback_data="aboutmanu_")]]
-            ),
-        )
-
+    
     elif query.data == "aboutmanu_spamprot":
         query.message.edit_text(
             text="* ｢ Anti-Spam Settings 」*"
@@ -577,7 +563,7 @@ def aries_about_callback(update, context):
             f"\n\n🔹 **ᴛʜᴇɴ ꜱᴇɴᴅ ᴘʟᴀʏ ᴄᴏᴍᴍᴀɴᴅ ᴀɴᴅ ᴜʀ ꜱᴏɴɢ ɴᴀᴍᴇ.**"
             f"\n\n🔹 **ᴍᴀᴋᴇ ꜱᴜʀᴇ ᴜ ꜱᴛᴀʀᴛᴇᴅ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ʙᴇꜰᴏʀᴇ ᴛʜᴀᴛ**\n\n"
             f"\n\n**ɪꜰ ᴀɴʏ ᴛʏᴘᴇ ᴏꜰ ᴇʀʀᴏʀ ᴡɪʟʟ ʙᴇ ᴄᴏᴍᴇꜱ ᴛʜᴇɴ ᴜ ᴄᴀɴ ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ ᴀᴛ ᴏᴜʀ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ɢʀᴏᴜᴘ.**\n"
-            f"\n\n🎵 __Powered by Creator Pavan Server__\n",
+            f"\n\n🎵 __Powered by Creator Pavan Server__ \n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -611,6 +597,36 @@ def aries_about_callback(update, context):
                     [
                         InlineKeyboardButton(
                             text="ʜᴏᴡ ᴛᴏ ᴜꜱᴇ", callback_data="aboutmanu_cbguide"
+                        ),
+                        
+                    ],
+                   [
+                       InlineKeyboardButton(text="🔙 ʜᴏᴍᴇ ʙᴀᴄᴋ", callback_data="aboutmanu_back"),
+                   ],
+                ]
+            ),
+        )
+    elif query.data == "aboutmanu_cbhelps":
+        query.message.edit_text(
+            text=f"* ｢ Music Command 」*\n"
+            f"\n\n1️⃣ »**/play [ ꜱᴏɴɢ ɴᴀᴍᴇ ]  :  ꜰᴏʀ ᴘʟᴀʏɪɴɢ ᴜʀ ꜱᴏɴɢ.**"
+            f"\n\n2️⃣ »**/pause :  ꜰᴏʀ ᴘᴀᴜꜱᴇᴅ ꜱᴛʀᴇᴀᴍɪɴɢ.**"
+            f"\n\n3️⃣ »**/resume : ꜰᴏʀ ʀᴇꜱᴜᴍᴇ ꜱᴛʀᴇᴀᴍɪɴɢ.**"
+            f"\n\n4️⃣ »**/stop or /end :  ꜰᴏʀ ᴇɴᴅ ꜱᴛʀᴇᴀᴍɪɴɢ.**"
+            f"\n\n5️⃣ »**/song [ ꜱᴏɴɢ ɴᴀᴍᴇ ]  :  ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴏɴɢ.**"
+            f"\n\n6️⃣ »**/video[ ꜱᴏɴɢ ɴᴀᴍᴇ ]  :  ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏ.**"
+            f"\n\n7️⃣ » **/search ꜰᴏʀ ꜱᴇᴀʀᴄʜɪɴɢ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ ꜱᴇʀᴠᴇʀ.**\n\n"
+            f"\n\n🌸 **ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴍᴏʀᴇ ᴍᴜꜱɪᴄ ᴘʟᴀʏᴇʀ ꜰᴇᴀᴛᴜʀᴇꜱ ᴛʜᴇɴ ᴜ ᴄᴀɴ ᴀᴅᴅ ᴏᴜʀ ꜱᴘᴇᴄɪᴀʟ ᴍᴜꜱɪᴄ ʙᴏᴛꜱ ʙʏ** [ᴄʟɪᴄᴋɪɴɢ ʜᴇʀᴇ](https://t.me/TheCreatorPavan/80).\n"
+            f"\n\n\n**© @TheCreatorPavan**",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="ʜᴏᴡ ᴛᴏ ᴜꜱᴇ", callback_data="aboutmanu_cbguide"
+                        ),
+                        InlineKeyboardButton(
+                            text="play", callback_data="aboutmanu_cbplay"
                         ),
                         
                     ],
