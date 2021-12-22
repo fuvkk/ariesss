@@ -446,7 +446,7 @@ async def cb_handler(client: pbot, query: CallbackQuery):
             await removebg_sticker(client, query.message)
 
 
-__mod_name__ = "🔘 Image Editor"
+__mod_name__ = "ɪᴍɢ ᴇᴅɪᴛ"
 __help__ = """
 🔘 IMAGE EDITOR.
 Hello Guys Im have some advanced image editing tools inbuilt
