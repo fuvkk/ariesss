@@ -170,7 +170,7 @@ def list_all_chats(update: Update, context: CallbackContext):
     update.effective_message.reply_text(text, parse_mode="HTML")
 
 
-__mod_name__ = "Aries AI"
+__mod_name__ = "ᴀʀɪᴇs ᴀɪ"
 
 
 AIK_HANDLER = CommandHandler("ai", kuki, run_async=True)
