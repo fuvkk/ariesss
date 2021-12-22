@@ -471,18 +471,19 @@ def aries_about_callback(update, context):
         )
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
-            text=f"*｢ About Credit 」*\n\n◈ Creator Pavan Is the redisigned version of Daisy and Saitama And Othrer for the best performance."
-            f"\n\n◈ From our ability we try to make it easier and faster."
-            f"\n\n◈ The Credit of redesigning to Pavan & Aayush."
-            f"\n\n◈ Some modules in this bot is owned by different authors, So, All credits goes to them Also for <b>Paul Larson for Marie</b>."
-            f"\n\n◈ If Any Question About Creator Pavan Bot, Let Us Know At Our Support Chat Group.",
+            text=f"*｢ About Credit 」*\n\n*◈  ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ɪꜱ ᴛʜᴇ ʀᴇᴅɪꜱɪɢɴᴇᴅ ᴠᴇʀꜱɪᴏɴ ᴏꜰ ᴅᴀɪꜱʏ ᴀɴᴅ ꜱᴀɪᴛᴀᴍᴀ ᴀɴᴅ ᴏᴛʜʀᴇʀ ꜰᴏʀ ᴛʜᴇ ʙᴇꜱᴛ ᴘᴇʀꜰᴏʀᴍᴀɴᴄᴇ.*"
+            f"\n\n*◈  ꜰʀᴏᴍ ᴏᴜʀ ᴀʙɪʟɪᴛʏ ᴡᴇ ᴛʀʏ ᴛᴏ ᴍᴀᴋᴇ ɪᴛ ᴇᴀꜱɪᴇʀ ᴀɴᴅ ꜰᴀꜱᴛᴇʀ.*"
+            f"\n\n*◈  ꜱᴘᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ ɪᴅᴢᴇʀᴏɪᴅ.*"
+            f"\n\n*◈  ᴄʀᴇᴅɪᴛ ᴏꜰ ʀᴇᴅᴇꜱɪɢɴɪɴɢ ᴛᴏ ᴘᴀᴠᴀɴ ᴀɴᴅ ᴀᴀʏᴜꜱʜ.*"
+            f"\n\n*◈  ꜱᴏᴍᴇ ᴍᴏᴅᴜʟᴇꜱ ɪɴ ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴏᴡɴᴇᴅ ʙʏ ᴅɪꜰꜰᴇʀᴇɴᴛ ᴀᴜᴛʜᴏʀꜱ, ꜱᴏ, ᴀʟʟ ᴄʀᴇᴅɪᴛꜱ ɢᴏᴇꜱ ᴛᴏ ᴛʜᴇᴍ ᴀʟꜱᴏ ꜰᴏʀ ᴘᴀᴜʟ ʟᴀʀꜱᴏɴ ꜰᴏʀ ᴍᴀʀɪᴇ.*"
+            f"\n\n*◈  ɪꜰ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ʙᴏᴛ, ʟᴇᴛ ᴜꜱ ᴋɴᴏᴡ ᴀᴛ ᴏᴜʀ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ɢʀᴏᴜᴘ.*",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                    [
-                      InlineKeyboardButton(text="𝗣𝗮𝘃𝗮𝗻", url="http://t.me/PavanxD"),
-                      InlineKeyboardButton(text="𝗔𝘆𝘂𝘀𝗵", url="http://t.me/op_aayush"),
+                      InlineKeyboardButton(text="Pᴀᴠᴀɴ", url="http://t.me/PavanxD"),
+                      InlineKeyboardButton(text="Aʏᴜꜱʜ", url="http://t.me/op_aayush"),
                    ],[
                       InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ", url="http://t.me/CreatorPavanSupport"),
                    ],
@@ -560,12 +561,12 @@ def aries_about_callback(update, context):
     elif query.data == "aboutmanu_cbguide":
         query.message.edit_text(
             text=f"* ｢ How To Setup Music 」*\n"
-            f"\n\n◈ *ꜰɪʀꜱᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ᴜʀ ɢʀᴏᴜᴘ.*"
-            f"\n\n◈ *ᴛʜᴇɴ ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ᴀꜱ ᴀᴅᴍɪɴ ᴀɴᴅ ɢɪᴠᴇ ᴀʟʟ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ᴇxᴄᴇᴘᴛ ᴀɴᴏɴʏᴍᴏᴜꜱ ᴀᴅᴍɪɴ.*"
-            f"\n\n◈ *ᴀꜰᴛᴇʀ ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ꜱᴛᴀʀᴛ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴏꜰ ᴜʀ ɢʀᴏᴜᴘ ʙᴇꜰᴏʀᴇ ᴛʜᴀᴛ ꜱᴇɴᴅ** `/reload` *ᴄᴏᴍᴍᴀɴᴅ ɪɴ ᴜʀ ᴄʜᴀᴛ ɢʀᴏᴜᴘ.*"
-            f"\n\n◈ *ᴛʜᴇɴ ꜱᴇɴᴅ ᴘʟᴀʏ ᴄᴏᴍᴍᴀɴᴅ ᴀɴᴅ ᴜʀ ꜱᴏɴɢ ɴᴀᴍᴇ.*"
-            f"\n\n◈ *ᴍᴀᴋᴇ ꜱᴜʀᴇ ᴜ ꜱᴛᴀʀᴛᴇᴅ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ʙᴇꜰᴏʀᴇ ᴛʜᴀᴛ*\n\n"
-            f"\n\n**ɪꜰ ᴀɴʏ ᴛʏᴘᴇ ᴏꜰ ᴇʀʀᴏʀ ᴡɪʟʟ ʙᴇ ᴄᴏᴍᴇꜱ ᴛʜᴇɴ ᴜ ᴄᴀɴ ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ ᴀᴛ ᴏᴜʀ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ɢʀᴏᴜᴘ.*\n"
+            f"\n\n*◈  ꜰɪʀꜱᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ᴜʀ ɢʀᴏᴜᴘ.*"
+            f"\n\n*◈  ᴛʜᴇɴ ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ᴀꜱ ᴀᴅᴍɪɴ ᴀɴᴅ ɢɪᴠᴇ ᴀʟʟ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ᴇxᴄᴇᴘᴛ ᴀɴᴏɴʏᴍᴏᴜꜱ ᴀᴅᴍɪɴ.*"
+            f"\n\n*◈  ᴀꜰᴛᴇʀ ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ꜱᴛᴀʀᴛ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴏꜰ ᴜʀ ɢʀᴏᴜᴘ ʙᴇꜰᴏʀᴇ ᴛʜᴀᴛ ꜱᴇɴᴅ* `/reload` *ᴄᴏᴍᴍᴀɴᴅ ɪɴ ᴜʀ ᴄʜᴀᴛ ɢʀᴏᴜᴘ.*"
+            f"\n\n*◈  ᴛʜᴇɴ ꜱᴇɴᴅ ᴘʟᴀʏ ᴄᴏᴍᴍᴀɴᴅ ᴀɴᴅ ᴜʀ ꜱᴏɴɢ ɴᴀᴍᴇ.*"
+            f"\n\n*◈  ᴍᴀᴋᴇ ꜱᴜʀᴇ ᴜ ꜱᴛᴀʀᴛᴇᴅ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ʙᴇꜰᴏʀᴇ ᴛʜᴀᴛ*"
+            f"\n\n*◈  ɪꜰ ᴀɴʏ ᴛʏᴘᴇ ᴏꜰ ᴇʀʀᴏʀ ᴡɪʟʟ ʙᴇ ᴄᴏᴍᴇꜱ ᴛʜᴇɴ ᴜ ᴄᴀɴ ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ ᴀᴛ ᴏᴜʀ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ɢʀᴏᴜᴘ.*\n"
             f"\n\n*© @TheCreatorPavan*\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
@@ -586,15 +587,15 @@ def aries_about_callback(update, context):
         query.message.edit_text(
             text=f"* ｢ Music Command 」*\n"
             f"\n\n1️⃣ »*/play [ ꜱᴏɴɢ ɴᴀᴍᴇ ]  :  ꜰᴏʀ ᴘʟᴀʏɪɴɢ ᴜʀ ꜱᴏɴɢ.*"
-            f"\n\n2️⃣ »*/pause :  ꜰᴏʀ ᴘᴀᴜꜱᴇᴅ ꜱᴛʀᴇᴀᴍɪɴɢ.*"
-            f"\n\n3️⃣ »*/resume : ꜰᴏʀ ʀᴇꜱᴜᴍᴇ ꜱᴛʀᴇᴀᴍɪɴɢ.*"
-            f"\n\n4️⃣ »*/stop or /end :  ꜰᴏʀ ᴇɴᴅ ꜱᴛʀᴇᴀᴍɪɴɢ.*"
+            f"\n\n2️⃣ »*/pause  :  ꜰᴏʀ ᴘᴀᴜꜱᴇᴅ ꜱᴛʀᴇᴀᴍɪɴɢ.*"
+            f"\n\n3️⃣ »*/resume  :  ꜰᴏʀ ʀᴇꜱᴜᴍᴇ ꜱᴛʀᴇᴀᴍɪɴɢ.*"
+            f"\n\n4️⃣ »*/stop or /end  :  ꜰᴏʀ ᴇɴᴅ ꜱᴛʀᴇᴀᴍɪɴɢ.*"
             f"\n\n5️⃣ »*/song [ ꜱᴏɴɢ ɴᴀᴍᴇ ]  :  ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴏɴɢ.*"
             f"\n\n6️⃣ »*/video[ ꜱᴏɴɢ ɴᴀᴍᴇ ]  :  ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏ.*"
-            f"\n\n7️⃣ »*/search ꜰᴏʀ ꜱᴇᴀʀᴄʜɪɴɢ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ ꜱᴇʀᴠᴇʀ.*"
-            f"\n\n8️⃣ »*/userbotjoin : ꜰᴏʀ ᴊᴏɪɴɪɴɢ ᴀꜱꜱɪꜱᴛᴀɴᴛ.*"
-            f"\n\n9️⃣ »*/userbotleave : ꜰᴏʀ ʟᴇᴀᴠᴇꜱ ᴀꜱꜱɪꜱᴛᴀɴᴛ.*"
-            f"\n\n*ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴍᴏʀᴇ ᴍᴜꜱɪᴄ ᴘʟᴀʏᴇʀ ꜰᴇᴀᴛᴜʀᴇꜱ ᴛʜᴇɴ ᴜ ᴄᴀɴ ᴀᴅᴅ ᴏᴜʀ ꜱᴘᴇᴄɪᴀʟ ᴍᴜꜱɪᴄ ʙᴏᴛꜱ : @PavanTunesBot or @FallenMusicBot or @CrepanRobot*\n"
+            f"\n\n7️⃣ »*/search  :  ꜰᴏʀ ꜱᴇᴀʀᴄʜɪɴɢ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ ꜱᴇʀᴠᴇʀ.*"
+            f"\n\n8️⃣ »*/userbotjoin  : ꜰᴏʀ ᴊᴏɪɴɪɴɢ ᴀꜱꜱɪꜱᴛᴀɴᴛ.*"
+            f"\n\n9️⃣ »*/userbotleave  : ꜰᴏʀ ʟᴇᴀᴠᴇꜱ ᴀꜱꜱɪꜱᴛᴀɴᴛ.*"
+            f"\n\n💁🏻 *ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴍᴏʀᴇ ᴍᴜꜱɪᴄ ᴘʟᴀʏᴇʀ ꜰᴇᴀᴛᴜʀᴇꜱ ᴛʜᴇɴ ᴜ ᴄᴀɴ ᴀᴅᴅ ᴏᴜʀ ꜱᴘᴇᴄɪᴀʟ ᴍᴜꜱɪᴄ ʙᴏᴛꜱ : @PavanTunesBot or @CrepanRobot or @FallenMusicBot*\n"
             f"\n\n\n*© @TheCreatorPavan*",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
