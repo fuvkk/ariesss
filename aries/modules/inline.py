@@ -3,7 +3,7 @@ import traceback
 from aries import pbot as app
 from aries.utils.inlinefuncs import *
 
-__mod_name__ = "Inline"
+__mod_name__ = "ɪɴʟɪɴᴇ"
 __help__ = """See inline for help related to inline"""
 
 
