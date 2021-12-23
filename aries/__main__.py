@@ -893,7 +893,35 @@ def is_chat_allowed(update, context):
         pass
 
 
+def donate(update: Update, context: CallbackContext):
 
+    update.effective_message.from_user
+
+    chat = update.effective_chat  # type: Optional[Chat]
+
+    context.bot
+
+    if chat.type == "private":
+
+        update.effective_message.reply_text(
+
+            DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
+
+        )
+
+        update.effective_message.reply_text(
+
+            "You can also donate to the person currently running me "
+
+            "[here](https://t.me/PavanxD)".format(DONATION_LINK),
+
+            parse_mode=ParseMode.MARKDOWN,
+
+        )
+
+    else:
+
+        pass
 
 
 
@@ -902,7 +930,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@creatorpavansupport", "`I am back.`")
+            dispatcher.bot.sendMessage(f"@creatorpavansupport", "I am back.")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
