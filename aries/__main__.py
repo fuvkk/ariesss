@@ -116,6 +116,7 @@ HELP_STRINGS = f"""
 
 ➲ /start : ꜱᴛᴀʀᴛ ᴍᴇ. ᴀʟʀᴇᴀᴅʏ ꜱᴛᴀʀᴛᴇᴅ.
 ➲ /help  : ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ ꜱᴇᴄᴛɪᴏɴ.
+➲ /donate : ꜱᴜᴘᴘᴏʀᴛ ᴜꜱ ʙʏ ᴅᴏɴᴀᴛᴇ ꜰᴏʀ ᴏᴜʀ ʜᴀʀᴅᴡᴏʀᴋ.
 ➲ /settings :
   ‣ ɪɴ ᴘᴍ : ᴡɪʟʟ ꜱᴇɴᴅ ʏᴏᴜ ʏᴏᴜʀ ꜱᴇᴛᴛɪɴɢꜱ ꜰᴏʀ ᴀʟʟ ꜱᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴏᴅᴜʟᴇꜱ.
   ‣ ɪɴ ɢʀᴏᴜᴘ : ᴡɪʟʟ ʀᴇᴅɪʀᴇᴄᴛ ʏᴏᴜ ᴛᴏ ᴘᴍ, ᴡɪᴛʜ ᴀʟʟ ᴛʜᴀᴛ ᴄʜᴀᴛ'ꜱ ꜱᴇᴛᴛɪɴɢꜱ.
@@ -127,9 +128,9 @@ HELP_STRINGS = f"""
 )
 
 
-DONATE_STRING = """Hello, glad to hear you want to donate!
- You can support the project via [pulsa](#) or by contacting @PavanxD\
- Supporting isnt always financial! \
+DONATE_STRING = """Hello, glad to hear you want to donate..!
+ You can support the project via Donating us for our hardwork for you. Contact @PavanxD For Donating.\
+ Supporting isnt always financial..! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
