@@ -205,7 +205,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "Whoaa My Lord Aryza its comming...", reply_to_message_id=reply
+                    "Whoaa My Lord Owner Master Creator Pavan Now is here...", reply_to_message_id=reply
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
@@ -217,7 +217,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome Devs
             if new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "Whoa! A VIP member of the Idzeroid Syndicates just joined!",
+                    "Whoa! A VIP member of the Creator Pavan Network just joined!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -277,8 +277,8 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome yourself
             if new_mem.id == bot.id:
                 update.effective_message.reply_text(
-                    "Hey {}, I'm {}! Thank you for adding me to {}\n"
-                    "Join support and channel update with clicking button below!".format(
+                    "Hey {}, I'm {}..!\nThank you for adding me to {} ❤️✨\n\n"
+                    "Join support and channel update with clicking button below..!".format(
                         user.first_name, context.bot.first_name, chat.title
                     ),
                     reply_to_message_id=reply,
@@ -286,11 +286,11 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
                         [
                             [
                                 InlineKeyboardButton(
-                                    text="🚑 Support", url=f"https://t.me/{SUPPORT_CHAT}"
+                                    text="Support", url=f"https://t.me/{SUPPORT_CHAT}"
                                 ),
                                 InlineKeyboardButton(
-                                    text="📢 Updates",
-                                    url="https://t.me/idzeroid",
+                                    text="Updates",
+                                    url="https://t.me/TheCreatorPavan",
                                 ),
                             ]
                         ],
