@@ -685,10 +685,10 @@ async def lego(event):
         fname = "ARIES.png"
         img.save(fname, "png")
         await tbot.send_file(
-            event.chat_id, file=fname, caption=f"Made by @TheCreatorPavan"
+            event.chat_id, file=fname, caption=f"*Made by @TheCreatorPavan*"
         )
         await pesan.delete()
         if os.path.exists(fname):
             os.remove(fname)
     except Exception as e:
-        await event.reply(f"Error, Report @IDZEROIDSUPPORT, {e}")
+        await event.reply(f"Error, Report @CREATORPAVANSUPPORT, {e}")
