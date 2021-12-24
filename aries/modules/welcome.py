@@ -205,7 +205,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "Whoaa My Lord Owner Master Creator Pavan Now is here...", reply_to_message_id=reply
+                    "Whoaa My Lord Owner Master Creator Pavan [ @PavanxD ] Now is here in ur supergroup...", reply_to_message_id=reply
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
@@ -277,7 +277,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome yourself
             if new_mem.id == bot.id:
                 update.effective_message.reply_text(
-                    "Hey {}, I'm {}..!\n\nThank you for adding me to {} ❤️✨\n\n"
+                    "Hey {}, I'm {}..!\n\nThank you for adding me to {} ❤️\n\nPromote me as a Admin with needed permissions for working properly.\n\n"
                     "Join support and channel update with clicking button below..!".format(
                         user.first_name, context.bot.first_name, chat.title
                     ),
