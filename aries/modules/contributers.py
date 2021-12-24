@@ -9,7 +9,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram import filters
 
 
-IDZ = "https://telegra.ph/file/08f41dc969408c08b8c68.jpg"
+IDZ = "https://telegra.ph/file/c20a6da05abc7a15297d1.jpg"
 
 
 @app.on_message(filters.command("repo") & ~filters.edited)
@@ -24,7 +24,7 @@ async def give_repo(c, m):
     await m.reply_photo(
         photo=IDZ,
         caption=f"""**Hey I'm Aries Robot** 
-**Owner repo : [Aryza](https://t.me/idzxartez)**
+**Owner repo : [Creator Pavan](https://t.me/creator_pavan)**
 **Python Version :** `{y()}`
 **Library Version :** `{o}`
 **Telethon Version :** `{s}`
@@ -40,12 +40,12 @@ async def give_repo(c, m):
             [
                 [
                     InlineKeyboardButton(
-                        "Repo", url="https://github.com/idzero23/SaintAries"
+                        "Repo", url="https://t.me/CreatorPavanSupport"
                     ),
                 ],
                 [
-                    InlineKeyboardButton("Support", url="https://t.me/idzeroidsupport"),
-                    InlineKeyboardButton("Update", url="https://t.me/idzeroid"),
+                    InlineKeyboardButton("Support", url="https://t.me/creatorpavansupport"),
+                    InlineKeyboardButton("Update", url="https://t.me/TheCreatorPavan"),
                 ],
             ]
         ),
