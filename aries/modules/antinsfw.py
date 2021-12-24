@@ -89,9 +89,9 @@ async def detect_nsfw(_, message):
 **Hentai:** `{results.hentai} %`
 **Drawings:** `{results.drawings} %`
 **——————————————————————**
-__Security of Creator Pavan__
+__Security of Creator Pavan Network__
 **——————————————————————**
-For stop this use `/nsfw off` command.
+For stop this use `/nsfw off`  command.
 """
     )
 
