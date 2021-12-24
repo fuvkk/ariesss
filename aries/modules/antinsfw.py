@@ -91,7 +91,7 @@ async def detect_nsfw(_, message):
 **——————————————————————**
 __Security of Creator Pavan Network__
 **——————————————————————**
-For stop this use `/nsfw off`  command.
+For stop this use `/nsfw disable` .
 """
     )
 
