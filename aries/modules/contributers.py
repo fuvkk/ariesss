@@ -33,7 +33,9 @@ async def give_repo(c, m):
 ```----------------
 | Collaborators |
 ----------------```
-•1. @creator_pavan\n•2. @Op_Aayush
+•1. @creator_pavan
+•2. @Op_Aayush
+
 **Create your own with click button bellow.**
 """,
         reply_markup=InlineKeyboardMarkup(
