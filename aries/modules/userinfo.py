@@ -481,7 +481,7 @@ def stats(update, context):
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
             + f"\n\n[SUPPORT](https://t.me/CreatorPavanSupport) | [UPDATES](https://t.me/TheCreatorPavan)\n\n"
-            + "╘══「 by [Aryza](https://t.me/CreatorxD) 」\n",
+            + "╘══「 by [Pavan](https://t.me/CreatorxD) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
         )
