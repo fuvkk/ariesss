@@ -23,7 +23,7 @@ async def give_repo(c, m):
         list_of_users += f"•{count}. [{i.login}](https://github.com/{i.login})\n"
     await m.reply_photo(
         photo=IDZ,
-        caption=f"""**Hey I'm Aries Robot** 
+        caption=f"""**Hey I'm Creator Pavan** 
 **Owner repo : [Creator Pavan](https://t.me/creator_pavan)**
 **Python Version :** `{y()}`
 **Library Version :** `{o}`
@@ -33,7 +33,7 @@ async def give_repo(c, m):
 ```----------------
 | Collaborators |
 ----------------```
-{list_of_users}
+•1. @creator_pavan\n•2. @Op_Aayush
 **Create your own with click button bellow.**
 """,
         reply_markup=InlineKeyboardMarkup(
