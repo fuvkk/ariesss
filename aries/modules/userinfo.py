@@ -493,9 +493,9 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n🔥 [Support](https://t.me/IDZEROIDSUPPORT) | 🔥 [Movie Channel](https://t.me/artezid)\n\n"
+                    + f"\n\n🔥 [Support](https://t.me/CreatorPavanSupport) | 🔥 [UPDATES](https://t.me/TheCreatorPavan)\n\n"
                 )
-                + "╘══「 by [Aryza](https://t.me/IdzXartez) 」\n"
+                + "╘══「 by [Pavan](https://t.me/CreatorxD) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
