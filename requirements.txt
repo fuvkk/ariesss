@@ -30,7 +30,7 @@ spongemock==0.3.4
 zalgo-text==0.6
 geopy
 nltk==3.6.6
-psutil==5.9.0
+psutil==5.8.0
 aiohttp>=2.2.5
 pillow
 CurrencyConverter
@@ -106,5 +106,5 @@ youtube_search
 pytube==11.0.2
 cryptg==0.2.post4
 aioredis==2.0.1
-NumPy==1.22.0
+NumPy==1.21.0
 yt-dlp
