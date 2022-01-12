@@ -377,10 +377,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/IDZEROID/15"
+                                "Health", url="https://telegra.ph/HEALTH-01-12"
                             ),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/IDZEROID/14"
+                                "Disaster", url="https://telegra.ph/Disaster-Levels-01-12"
                             ),
                         ],
                         [
