@@ -76,12 +76,12 @@ async def check_chat_captcha(client, message):
         return
     await client.send_message(
         chat_id,
-        text=f"{message.from_user.mention} To Chat Here Please Verify That Your A Human",
+        text=f"🙋🏻 Hey **{message.from_user.mention} To Chat Here Please Verify That Your A Human**\n\n**Security of Creator Pavan**",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="VERIFY NOW", callback_data=f"verify_{chat_id}_{user_id}"
+                        text="ᴠᴇʀɪꜰʏ ʜᴇʀᴇ", callback_data=f"verify_{chat_id}_{user_id}"
                     )
                 ]
             ]
@@ -94,7 +94,7 @@ async def check_chat_captcha(client, message):
 )
 async def add_chat(bot, message):
     if CC_API is None:
-        await message.reply_text("join @idzeroidsupport")
+        await message.reply_text("join @creatorpavansupport")
         return
     chat_id = message.chat.id
     user_id = message.from_user.id
@@ -116,11 +116,11 @@ async def add_chat(bot, message):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Number",
+                                text="ɴᴜᴍʙᴇʀ",
                                 callback_data=f"new_{chat_id}_{user_id}_N",
                             ),
                             InlineKeyboardButton(
-                                text="Emoji", callback_data=f"new_{chat_id}_{user_id}_E"
+                                text="ᴇᴍᴏᴊɪ", callback_data=f"new_{chat_id}_{user_id}_E"
                             ),
                         ]
                     ]
@@ -133,7 +133,7 @@ async def add_chat(bot, message):
 )
 async def del_chat(bot, message):
     if CC_API is None:
-        await message.reply_text("join @idzeroidsupport")
+        await message.reply_text("join @creatorpavansupport")
         return
     chat_id = message.chat.id
     user = await bot.get_chat_member(message.chat.id, message.from_user.id)
@@ -155,7 +155,7 @@ async def cb_handler(bot, query):
         user_id = query.data.split("_")[2]
         captcha = query.data.split("_")[3]
         if query.from_user.id != int(user_id):
-            await query.answer("This Message is Not For You!", show_alert=True)
+            await query.answer("This Message is Not For You 🙃", show_alert=True)
             return
         if captcha == "N":
             type_ = "Number"
@@ -173,7 +173,7 @@ async def cb_handler(bot, query):
         chat_id = query.data.split("_")[1]
         user_id = query.data.split("_")[2]
         if query.from_user.id != int(user_id):
-            await query.answer("This Message is Not For You!", show_alert=True)
+            await query.answer("This Message is Not For You 🙃", show_alert=True)
             return
         chat = manage_db().chat_in_db(int(chat_id))
         print("proccesing cb data")
@@ -182,7 +182,7 @@ async def cb_handler(bot, query):
             markup = [[], [], []]
             if c == "N":
                 print("proccesing number captcha")
-                await query.answer("Creating captcha for you")
+                await query.answer("Creating captcha for you..")
                 data_ = get(
                     f"https://api.jigarvarma.tk/num_captcha?token={CC_API}"
                 ).text
@@ -226,7 +226,7 @@ async def cb_handler(bot, query):
                     count += 1
             elif c == "E":
                 print("proccesing img captcha")
-                await query.answer("Creating captcha for you")
+                await query.answer("Creating captcha for you..")
                 data_ = get(
                     f"https://api.jigarvarma.tk/img_captcha?token={CC_API}"
                 ).text
@@ -275,7 +275,7 @@ async def cb_handler(bot, query):
             msg = await bot.send_photo(
                 chat_id=chat_id,
                 photo=data_["answer"]["captcha"],
-                caption=f"{query.from_user.mention} Please click on each {typ_} button that is showen in image, {tot} mistacks are allowed.",
+                caption=f"{query.from_user.mention} Please click on each {typ_} button that is showen in above image, {tot} mistacks are allowed. If u can't verify then contact **Creator Pavan.**",
                 reply_markup=InlineKeyboardMarkup(markup),
             )
             LocalDB[query.from_user.id]["msg_id"] = msg.message_id
@@ -285,10 +285,10 @@ async def cb_handler(bot, query):
         user_id = query.data.split("_")[2]
         _number = query.data.split("_")[3]
         if query.from_user.id != int(user_id):
-            await query.answer("This Message is Not For You!", show_alert=True)
+            await query.answer("This Message is Not For You 🙃", show_alert=True)
             return
         if query.from_user.id not in LocalDB:
-            await query.answer("Try Again After Re-Join!", show_alert=True)
+            await query.answer("Try Again After Re-Join.", show_alert=True)
             return
         c = LocalDB[query.from_user.id]["captcha"]
         tot = LocalDB[query.from_user.id]["total"]
@@ -303,7 +303,7 @@ async def cb_handler(bot, query):
             if n == 0:
                 await query.message.edit_caption(
                     f"{query.from_user.mention}, you failed to solve the captcha!\n\n"
-                    f"You can try again after 1 minutes.",
+                    f"You can try again after 1 minutes, or contact to **Creator Pavan**",
                     reply_markup=None,
                 )
                 await asyncio.sleep(60)
@@ -314,7 +314,7 @@ async def cb_handler(bot, query):
             )
             await query.message.edit_caption(
                 f"{query.from_user.mention}, select all the {typ_}s you see in the picture. "
-                f"You are allowed only {n} mistakes.",
+                f"You are allowed only {n} mistakes. If u can't verify then contact to **Creator Pavan.**",
                 reply_markup=InlineKeyboardMarkup(markup),
             )
         else:
@@ -326,7 +326,7 @@ async def cb_handler(bot, query):
                 reply_markup=InlineKeyboardMarkup(markup)
             )
             if not LocalDB[query.from_user.id]["answer"]:
-                await query.answer("You Passed🥳 the Captcha!", show_alert=True)
+                await query.answer("Congratulations 🥳 You Crossed Security of Creator Pavan.", show_alert=True)
                 del LocalDB[query.from_user.id]
                 await bot.unban_chat_member(
                     chat_id=query.message.chat.id, user_id=query.from_user.id
