@@ -103,7 +103,7 @@ buttons = [
     [
         InlineKeyboardButton(
             text=" 🤖 ᴀᴅᴅ ᴛᴏ ᴜʀ ꜱᴜᴘᴇʀ ɢʀᴏᴜᴘ 🤖",
-            url="t.me/creatorpavannetworkbot?startgroup=true",
+            url="t.me/creatorpavanbot?startgroup=true",
         ),
     ],
     
