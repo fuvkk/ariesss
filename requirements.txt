@@ -101,7 +101,7 @@ hiredis==2.0.0
 selenium==4.1.0
 cowpy
 glitch_this==1.0.2
-uvloop==
+uvloop
 youtube_search
 pytube==11.0.2
 cryptg==0.2.post4
