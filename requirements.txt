@@ -84,7 +84,7 @@ python-arq
 envparse==0.2.0
 better_profanity==0.7.0
 textblob==0.17.1 
-nudepy==0.5.1
+nudepy
 motor>=2.1.0,<2.6.0
 gpytranslate==1.3.0
 fontTools==4.28.5
@@ -101,7 +101,7 @@ hiredis==2.0.0
 selenium==4.1.0
 cowpy
 glitch_this==1.0.2
-uvloop==0.16.0
+uvloop==
 youtube_search
 pytube==11.0.2
 cryptg==0.2.post4
